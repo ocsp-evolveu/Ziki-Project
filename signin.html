@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body class="Ziki1">
+    <header>
+        <div id="companyBrand">
+            <ul id="brandName">
+                <img id="zikiLogo" src="./img/logo.png" alt="">
+            </ul>
+        </div>
+        <nav>
+            <ul id="nav">
+
+                <li><a class="current" href="index.html">Home</a></li>
+
+                <li><a class="current" href="services.html">Services</a></li>
+                
+                <!-- <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="photography.html">photography</a>
+                        <hr />
+                        <a href="music.html">Music</a>
+                        <hr />
+                        <a href="art.html">Art</a>
+                        <hr />
+                        <a href="#">Catergory D</a>
+                        <hr />
+                        <a href="#">Catergory E</a>
+                    </div>
+                </li> -->
+                <li><a class="" href="create.html">Create</a> </li>
+
+                <li><a class="" href="find_events.html">Events</a></li>
+
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+
+    <div>
+        <!-- <form class="ovalShape" action=""> -->
+            <input class="signinTextbox" id="email" type="text" name="inputBox" placeholder="Username"><br><br>
+            <input class="signinTextbox" id="password" type="password" name="inputBox" placeholder="Password"><br><br>
+            <input type="checkbox">
+            <label for="">stay signed in</label><br><br>
+            <button id="signInNewUser">Sign In</button><br><br>
+            <hr><br>
+            <button type="button" onclick="document.location='signup.html'">Create New Account</button><br><br>
+            <hr>
+
+            <label for="">Sign in with <a onclick="return purpleGoogle()" id="googleTag" href="">Google</a> or <a
+                    onclick="purpleFacebook();return false" id="facebookTag" href="">Facebook</a> </label>
+
+            <span id="registerError" style="display: none">
+                Sign In Error</span>
+
+        <!-- </form> -->
+    </div>
+   
+    <script src="js/index.js"></script>
+    <script src="js/signin.js"></script>
+
+</body>
+<footer>
+    <p>
+        ZIKI<span class="smallFont">.com</span> |
+        <a href="ph.html">Copyright</a> &copy;2020
+    </p>
+</footer>
+</html>
