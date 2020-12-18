@@ -1,3 +1,5 @@
+//Henry
+
 let acc = document.getElementsByClassName("accordion");
 let i;
 
@@ -25,11 +27,11 @@ const loadArt = async () => {
 }
 
 /************************************************************************************************************************************************* */
-const loadPhotographyData = async () => { // this method triggers when the button is clicked
-    const data = await fetch("../data.json"); //get data from database (in this case the data.json is our database)
-    let resp = await data.json(); //convert data to json so we can read the data   
-    createTemplate(resp);
-}
+// const loadPhotographyData = async () => { // this method triggers when the button is clicked
+//     const data = await fetch("../data.json"); //get data from database (in this case the data.json is our database)
+//     let resp = await data.json(); //convert data to json so we can read the data   
+//     createTemplate(resp);
+// }
 
 const createTemplate = (jsonData) => {
     let cnt = 0;
@@ -95,7 +97,7 @@ const createColumnForPicture = (img_1, img_2, img_3) => {
     return divCol;
 }
 
-window.addEventListener('load', loadPhotographyData); // Do something when the button is clicked
+// window.addEventListener('load', loadPhotographyData); // Do something when the button is clicked
 
 /************************************************************************************************************************************************************* */
 
@@ -172,6 +174,7 @@ if (login) {
 
 }
 
+//Charles
 
 function purpleGoogle() {
     document.getElementById("googleTag").style.color = "purple"
@@ -182,50 +185,10 @@ function purpleGoogle() {
     document.querySelector("#facebookTag").style.color = "purple"
     }
 
-    // function initMap() {
-    //     // The location of Calgary
-    //     const calgary = { lat: 51.0447, lng: -114.0719 };
-    //     // The map, centered at calgary
-    //     const map = new google.maps.Map(document.getElementById("map"), {
-    //       zoom: 4,
-    //       center: calgary,
-    //     });
-    //     // The marker, positioned at Uluru
-    //     const marker = new google.maps.Marker({
-    //       position: calgary,
-    //       map: map,
-    //     });
-    //   }
 
-    //get the upload content modal
-let contentFrame = document.getElementById("upload-content-frame");
-
-//get the button that opens the content modal
-let btn = document.getElementById("upload-btn");
-
-//get the element that closes the modal/ content frame
-let close = document.getElementById("close");
-
-//open the content frame when the user clicks on the button
-// btn.onclick = function() {
-//     contentFrame.style.display = "block";
-// }
-
-//close the content frame or modal when the user clicks on X
-// close.onclick = function(event) {
-//     contentFrame.style.display = "none";
-// }
-
-//close the content frame or modal when the user clicks anywhere outside
-window.onclick = function(event) {
-    if (event.target === contentFrame) {
-        contentFrame.styl.display = "none";
-    }
-}
-
-
-
-let video = document.getElementById("video")
+    //Yemi
+       //display
+    let video = document.getElementById("video")
 
 function openFullscreen(){
     if (video.requestFullscreen) {
@@ -233,6 +196,26 @@ function openFullscreen(){
     }
 }
 
+      //upload
+let contentFrame = document.getElementById("upload-content-frame");
 
+//get the button that opens the content modal
+let btn = document.getElementsByClassName("upload-btn");
+
+//get the element that closes the modal/ content frame
+let close = document.getElementById("close");
+
+//open the content frame when the user clicks on the button
+for (i=0; i < btn.length; i++) {
+    btn[i].onclick = function() {
+    contentFrame.style.display = "block";
+    }
+}
+
+
+// //close the content frame or modal when the user clicks on X
+// close.onclick = function(event) {
+//     contentFrame.style.display = "none";
+// }
 
 

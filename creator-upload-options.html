@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Uploadport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/creator-upload-options.css">
+    <script src="https://kit.fontawesome.com/babaf47f2f.js"></script>
+    <title>Creator Upload Options</title>
+</head>
+
+<body class="Ziki1">
+    <header>
+        <div id="companyBrand">
+            <ul id="brandName">
+                <img id="zikiLogo" src="./img/logo.png" alt="">
+            </ul>
+        </div>
+        <nav>
+            <ul id="nav">
+
+                <li><a class="current" href="index.html">Home</a></li>
+
+                <li><a class="current" href="guest-content-options.html">Guest</a></li>
+                <!-- <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Categories</a>
+                        <div class="dropdown-content">
+                            <a href="photography.html">photography</a>
+                            <hr />
+                            <a href="music.html">Music</a>
+                            <hr />
+                            <a href="art.html">Art</a>
+                            <hr />
+                            <a href="#">Catergory D</a>
+                            <hr />
+                            <a href="#">Catergory E</a>
+                        </div>
+                    </li> -->
+                <li><a class="" href="creator-upload-options.html">Creator</a> </li>
+
+                <li><a class="" href="signin.html">Sign In</a></li>
+
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+
+    <!-- UPLOAD  4 MUSIC -->
+
+
+    <div class="content-categories">
+        <div class="category" id="music">
+            <i class="fas fa-music"></i>
+            <p class="content-title">Music</p>
+            <p class="content-desc" id="service-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ut diam metus, hendrerit a mauris sit amet, accumsan varius nisl.
+                Donec justo sem, lacinia fermentum libero quis, mollis dapibus arcu.
+                Proin imperdiet eget ex in facilisis. Phasellus faucibus urna ac convallis suscipit.
+            </p>
+            <br>
+
+            <button id="uploadMusicButton">Upload</button>
+        </div>
+
+
+
+        <!-- UPLOAD  4 PAINTING -->
+
+
+        <div class="category" id="creative-painting">
+            <i class="fas fa-paint-brush"></i>
+            <p class="content-title">Creative Painting</p>
+            <p class="content-desc" id="service-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ut diam metus, hendrerit a mauris sit amet, accumsan varius nisl.
+                Donec justo sem, lacinia fermentum libero quis, mollis dapibus arcu.
+                Proin imperdiet eget ex in facilisis. Phasellus faucibus urna ac convallis suscipit.
+            </p>
+            <br>
+
+            <button id="uploadPaintingButton">Upload</button>
+        </div>
+
+
+        <!-- UPLOAD 4 PHOTOGRAPHER -->
+
+
+        <div class="category" id="photography">
+            <i class="fas fa-camera"></i>
+            <p class="content-title">Photography</p>
+            <p class="content-desc" id="service-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ut diam metus, hendrerit a mauris sit amet, accumsan varius nisl.
+                Donec justo sem, lacinia fermentum libero quis, mollis dapibus arcu.
+                Proin imperdiet eget ex in facilisis. Phasellus faucibus urna ac convallis suscipit.
+            </p>
+            <br>
+            <button id="uploadPhotographyButton">Upload</button>
+
+        </div>
+    </div>
+
+    <!-- END FOR UPLOAD BUTTON & BEGINING OF FILLING FORM SESSION -->
+
+
+
+    <!-- MUSIC SECTION -->
+
+
+    <div id="uploadMusicInfo">
+        <div id="frame-contents">
+            <span id="musicClose" style="cursor: pointer;">X</span>
+
+
+            <div id="uploadMusic">
+                <input class="new-content" id="musicFileUpload" type="file" multiple /><br><br>
+                <span>videos should be in "mp4" or "wmv" (max 7mb)</span> <br> <br>
+                <input id="musicContentTitle" type="text" placeholder="Enter content title" /><br><br>
+                <input id="musicUploadedBy" type="text" placeholder="Enter your name" /><br><br>
+                <textarea id="musicContentDescription" type="text"
+                    placeholder="Provide content description"></textarea><br><br>
+                
+                <button id="musicSubmitFile">Submit</button>
+                <span id="musicSubmissionError" style="display: none">
+                    error uploading music</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAINTING SECTION -->
+
+
+    <div id="uploadPaintingInfo" style="display: none;">
+        <div id="frame-contents">
+            <span id="paintingClose" style="cursor: pointer;">X</span>
+
+
+
+            <div id="uploadPainting">
+                <input class="new-content" id="paintingFileUpload" type="file" multiple /><br><br>
+                <span>images should be in "jpg" or "png" (max 3mb)</span><br><br>
+                <input id="paintingContentTitle" type="text" placeholder="Enter content title" /><br><br>
+                <input id="paintingUploadedBy" type="text" placeholder="Enter your name" /><br><br>
+                <textarea id="paintingContentDescription" type="text" placeholder="Provide content description"></textarea><br><br>
+               
+                <button id="paintingSubmitFile">Submit</button>
+                <span id="paintingSubmissionError" style="display: none">
+                    error uploading Painting</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PHOTOGRAPHER SECTION -->
+
+    <div id="uploadPhotographersInfo">
+        <div id="frame-contents">
+            <span id="photographersClose" style="cursor: pointer;">X</span>
+
+
+
+            <div id="uploadPhotographies">
+                <input class="new-content" id="photographersFileUpload" type="file" multiple /><br><br>
+                <span>images should be in "jpg" or "png" (max 3mb)</span><br><br>
+                <input id="photographersContentTitle" type="text" placeholder="Enter content title" /><br><br>
+                <input id="photographersUploadedBy" type="text" placeholder="Enter your name" /><br><br>
+                <textarea id="photographersContentDescription" type="text"
+                    placeholder="Provide content description"></textarea><br><br>
+                <button id="photographersSubmitFile">Submit</button>
+                <span id="PhotographyError" style="display: none">
+                    error uploading Photographer</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+        <p> ZIKI<span class="smallFont">.com</span> | Copyright &copy;2020</p>
+
+    </footer>
+    <script src="js/creator.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+</body>
+
+</html>

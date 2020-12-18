@@ -1,5 +1,4 @@
 
-
 const newEmail = document.getElementById("email");
 const newPassword = document.getElementById("password");
 const signInNewUser = document.getElementById("signInNewUser");
@@ -34,7 +33,7 @@ const signIn_registration = async () => {
         else {
             registerError.style.display = "block";
         }
-        console.log(resp);
+        // console.log(resp);
     }
 
 

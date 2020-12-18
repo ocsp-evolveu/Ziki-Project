@@ -24,7 +24,7 @@
                 <li><a class="current" href="index.html">Home</a></li>
 
                 <li><a class="current" href="services.html">Services</a></li>
-                
+
                 <!-- <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Categories</a>
                     <div class="dropdown-content">
@@ -39,7 +39,7 @@
                         <a href="#">Catergory E</a>
                     </div>
                 </li> -->
-                <li><a class="" href="create.html">Create</a> </li>
+                <li><a class="" href="content-options.html">Create</a> </li>
 
                 <li><a class="" href="find_events.html">Events</a></li>
 
@@ -49,26 +49,24 @@
     </header>
 
 
-    <div>
-        <!-- <form class="ovalShape" action=""> -->
-            <input class="signinTextbox" id="email" type="text" name="inputBox" placeholder="Username"><br><br>
-            <input class="signinTextbox" id="password" type="password" name="inputBox" placeholder="Password"><br><br>
-            <input type="checkbox">
-            <label for="">stay signed in</label><br><br>
-            <button id="signInNewUser">Sign In</button><br><br>
-            <hr><br>
-            <button type="button" onclick="document.location='signup.html'">Create New Account</button><br><br>
-            <hr>
+    <div class="siginForm ovalShape">
+        <input class="signinTextbox" id="email" type="text" name="inputBox" placeholder="Username"><br><br>
+        <input class="signinTextbox" id="password" type="password" name="inputBox" placeholder="Password"><br><br>
+        <input type="checkbox">
+        <label for="">stay signed in</label><br><br>
+        <button id="signInNewUser">Sign In</button><br>
+        <hr><br>
+        <button type="button" onclick="document.location='signup.html'">Create New Account</button><br><br>
+        <hr>
 
-            <label for="">Sign in with <a onclick="return purpleGoogle()" id="googleTag" href="">Google</a> or <a
-                    onclick="purpleFacebook();return false" id="facebookTag" href="">Facebook</a> </label>
+        <label for="">Sign in with <a onclick="return purpleGoogle()" id="googleTag" href="">Google</a> or <a
+                onclick="purpleFacebook();return false" id="facebookTag" href="">Facebook</a> </label>
 
-            <span id="registerError" style="display: none">
-                Sign In Error</span>
-
-        <!-- </form> -->
+        <span id="registerError" style="display: none">
+            Sign In Error</span>
     </div>
-   
+
+
     <script src="js/index.js"></script>
     <script src="js/signin.js"></script>
 
@@ -79,4 +77,5 @@
         <a href="ph.html">Copyright</a> &copy;2020
     </p>
 </footer>
+
 </html>

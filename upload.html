@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Content Stage</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <h2>This page is representative of the page from which the upload content modal will be launched</h2><br>
+    <button id="upload-btn" type="button">Upload Content</button>
+
+    <!--upload content modal-->
+    <div id="upload-content-frame">
+        <div id="frame-contents">
+            <!--close button-->
+            <span id="close">X</span>
+
+            <!--select content file from disc-->
+            <div id="file-upload">
+               <!--<label for="new-content">File Upload:</label>-->
+                <input id="content" type="file" name="new-content"><br>
+            </div>
+
+            <!--content description-->
+            <input id="content-desc" type="text" placeholder="Provide content description">
+
+            <!--submit uploaded file-->
+            <input id="submit" type="submit">
+        </div>
+    </div>
+
+    <script src="upload.js" type="text/javascript"></script>
+</body>
+</html>

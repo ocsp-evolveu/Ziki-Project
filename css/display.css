@@ -1,0 +1,40 @@
+/*#sidebar, .nav-control {
+    display: none;
+}*/
+
+#content-frame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content {
+    margin: 25px 10px;
+}
+
+.content-title {
+    font-weight: bold;
+}
+/*
+@media screen and (min-width: 600px) {
+    body {
+        display: flex;
+    }
+
+    #sidebar {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content-frame {
+        flex: 4;
+    }
+
+    .nav-control {
+        width:50%;
+        height: auto;
+        margin: 20px 0;
+    }
+}*/

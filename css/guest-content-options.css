@@ -1,0 +1,118 @@
+/* body {
+    font-family: Arial;
+    line-height: 25px;
+} */
+
+#content-intro {
+    /* display: none; */
+    text-align: center;
+}
+#intro-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: center;
+    align-self: center;
+    margin: 15px;
+}
+
+.content-categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#music {
+    background-color: rgba(0, 0, 255, 0.8);
+    height: fit-content;
+}
+
+#creative-painting {
+    background-color: rgba(139, 0, 0, 0.8);
+    height: fit-content;
+}
+
+#photography {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: fit-content;
+}
+
+.category {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-bottom: 40px;
+    margin: 20px 20px 10px 20px;
+}
+
+i {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.content-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.content-desc {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0 10px;
+    color: #fff;
+    }
+
+button {
+    width: 25%;
+    height: 40px;
+    margin-bottom: 20px;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 35%;
+}
+
+@media screen and (min-width: 800px) {
+    #content-intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    /* #intro-text {
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 70px;
+        text-align: center;
+        align-self: center;
+        margin: 15px;
+
+    } */
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-categories {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .category {
+        margin: 20px 5px 10px 5px;
+        height: 60%;
+    }
+}

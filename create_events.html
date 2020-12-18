@@ -8,7 +8,8 @@
     <meta name="description" content="website template" />
     <title>VotingOffice.com | Create Event</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 </head>
 
@@ -19,8 +20,8 @@
                 <ul id="brandName">
                     <li class="dropdown">
                         <a href="index.html" class="dropbtn largeFont">
-                VotingOffice<span class="smallFont">.com</span>
-              </a>
+                            ZIKI<span class="smallFont">| VotingOffice</span>
+                        </a>
                         <div class="dropdown-content">
                             <a href="upcoming_events.html">Upcoming Event</a>
                             <hr />
@@ -38,7 +39,7 @@
             <nav>
                 <ul id="nav">
                     <li><a class="current" href="index.html">Home</a></li>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn">Categories</a>
                         <div class="dropdown-content">
                             <a href="photography.html">photography</a>
@@ -51,12 +52,12 @@
                             <hr />
                             <a href="#">Catergory E</a>
                         </div>
-                    </li>
+                    </li> -->
                     <li><a class="" href="create_events.html">Create Event</a></li>
 
                     <li><a class="" href="find_events.html">Find Event</a></li>
 
-                    <li><a class="" href="#">Contact Us</a></li>
+                    <li><a class="" href="signin.html">Sign In</a></li>
                 </ul>
             </nav>
         </div>
@@ -73,10 +74,14 @@
                 <h2>Photography</h2>
 
                 <div class="create_Event_Card">
-                    <img src="/img/3.jpeg" alt="pix" style="width: 100%" />
+                    <img src="img/3.jpeg" alt="pix" style="width: 100%" />
                     <div id="photographyEvent" class="w3-container w3-center">
                         <p>Create Photography Event</p>
                     </div>
+                    <span class="photoError" id="photoSubmissionError" style="display: none">
+                        error uploading images</span>
+                    <span class="photoSuccess" id="successSubmission" style="display: none">
+                        Uploaded images successfully</span>
                 </div>
 
                 <!-- Copy here -->
@@ -94,32 +99,90 @@
                         <div>
                             <span>Picture 1:</span>
                             <input class="bottom_space_10" id="ph_Pix" type="file" multiple />
+                            <span>Image should be in "jpeg" or "png" (max 3MB)</span>
                         </div>
                         <button class="bottom_space_10" id="ph_Submit" type="button">
                             Submit
                         </button>
                     </div>
                 </div>
-
+                <!-- End Copy here -->
+            </div>
             <!-- Music -->
-            <div id="musicEvent" class="create_Event_Container">
+            <div class="create_Event_Container">
                 <h2>Music</h2>
 
                 <div class="create_Event_Card">
-                    <img src="/img/4.jpeg" alt="pix" style="width: 100%" />
-                    <div class="w3-container w3-center">
+                    <img src="img/4.jpeg" alt="pix" style="width: 100%" />
+                    <div id="musicEvent" class="w3-container w3-center">
                         <p>Create Music Event</p>
+                    </div>
+                </div>
+                <div id="uploadMusic" class="text_Left" style="display: none">
+                    <br />
+                    <div class="container">
+                        <div>
+                            <span>First Name:</span>
+                            <input class="bottom_space_10" id="m_FName" type="text" />
+                        </div>
+                        <div>
+                            <span>Last Name:</span>
+                            <input class="bottom_space_10" id="m_LName" type="text" />
+                        </div>
+                        <div>
+                            <span>Picture 1:</span>
+                            <input class="bottom_space_10" id="m_Pix1" type="file" multiple />
+                        </div>
+                        <span id="musicSubmissionError" style="display: none">
+                            error uploading music</span>
+                        <span id="musicSuccessSubmission" style="display: none">
+                            Uploaded images successfully</span>
+
+                        
+                        <button class="bottom_space_10" id="m_Submit">Submit</button>
+                        <span>Video should be in "mp4" or "mgb" (max 1GB)</span>
                     </div>
                 </div>
             </div>
             <!-- Art -->
-            <div id="artEvennt" class="create_Event_Container">
-                <h2>Art</h2>
+
+            <div class="create_Event_Container">
+                <h2>Painting</h2>
+                <span class="loginError" id="registerError" style="display: none">
+                    error uploading images</span>
 
                 <div class="create_Event_Card">
-                    <img src="/img/6.jpeg" alt="pix" style="width: 100%" />
-                    <div class="w3-container w3-center">
-                        <p>Create Art Event</p>
+                    <img src="img/6.jpeg" alt="pix" style="width: 100%" />
+                    <div id="paintEvent" class="w3-container w3-center">
+                        <p>Create painting Event</p>
+                    </div>
+                </div>
+                <div id="uploadPainting" class="text_Left" style="display: none">
+                    <br />
+                    <div class="container">
+                        <div>
+                            <span>First Name:</span>
+                            <input class="bottom_space_10" id="p_FName" type="text" />
+                        </div>
+                        <div>
+                            <span>Last Name:</span>
+                            <input class="bottom_space_10" id="p_LName" type="text" />
+                        </div>
+                        <div>
+                            <span>Picture 1:</span>
+                            <input class="bottom_space_10" id="p_Pix1" type="file" multiple />
+                            <span>Image should be in "jpeg" or "png" (max 3MB)</span>
+                        </div>
+                        <!-- <div>
+                            <span>Picture 2:</span>
+                            <input class="bottom_space_10" id="a_Pix2" type="file" />
+                        </div> -->
+                        <button class="bottom_space_10" id="p_Submit">Submit</button>
+
+                        <span class="paintError" id="paintSubmissionError" style="display: none">
+                            error uploading images</span>
+                        <span class="paintSuccess" id="paintSuccessSubmission" style="display: none">
+                            Uploaded images successfully</span>
                     </div>
                 </div>
             </div>
@@ -142,8 +205,7 @@
             VotingOffice<span class="smallFont">.com</span> | Copyright &copy;2020
         </p>
     </footer>
-    <script src="/js/index.js"></script>
-    <script src="/js/create_events.js"></script>
+    <script src="js/create_event.js"></script>
 </body>
 
 </html>
